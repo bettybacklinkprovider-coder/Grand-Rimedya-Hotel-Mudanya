@@ -1,0 +1,6 @@
+{
+  "name": "Grand Rimedya Hotel Mudanya",
+  "description": "Luxury hotel in Mudanya, Bursa offering comfortable accommodation, modern interiors, and refined Turkish hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

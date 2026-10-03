@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0d0714;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Purple Luxury Accents & Glassmorphism */
+.glass-header {
+  background: rgba(15, 8, 28, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.glass-card {
+  background: rgba(30, 16, 50, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(45, 22, 75, 0.65);
+  border-color: rgba(216, 180, 254, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px rgba(126, 34, 206, 0.25);
+}
+
+/* Gold Accent Text & Gradients */
+.text-gold-accent {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-purple-gold-cta {
+  background: linear-gradient(135deg, #6b21a8 0%, #3b0764 60%, #1e1b4b 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0714;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b0764;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6b21a8;
+}
